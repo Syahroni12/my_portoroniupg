@@ -26,9 +26,9 @@ const contactInfo = [
 ];
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: MessageCircle, href: "#", label: "WhatsApp" },
+  { icon: Linkedin, href: "https://linkedin.com/in/muhammad-syahroni-97077524a/", label: "LinkedIn" },
+  { icon: Github, href: "https://github.com/Syahroni12", label: "GitHub" },
+  { icon: MessageCircle, href: "https://wa.me/6285536539053", label: "WhatsApp" },
 ];
 
 export function ContactSection() {

@@ -2,12 +2,10 @@ import { motion } from "framer-motion";
 import { ChevronDown, Download, FolderOpen } from "lucide-react";
 
 export function HeroSection() {
-  const scrollToProjects = () => {
-    const element = document.querySelector("#projects");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const GoToProjects = () => {
+    window.location.href = "/projects";
   };
+
 
   const downloadCv = () => {
     const cvUrl = '/.pdf'; // Replace with the actual path to your CV file
@@ -132,7 +130,7 @@ export function HeroSection() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={scrollToProjects}
+              onClick={GoToProjects}
               className="btn-primary flex items-center justify-center gap-2"
             >
               <FolderOpen className="w-5 h-5" />

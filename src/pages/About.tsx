@@ -1,18 +1,17 @@
-
 import { Navbar } from "@/components/Navbar";
-import { SkillsSection } from "@/components/SkillsSection";
+// immport AboutSection from components
+import { AboutSection } from "@/components/AboutSection";
 import { Footer } from "@/components/Footer";
-
-const Skills = () => {
+const About = () => {
     return (
         <div className="min-h-screen bg-background">
             <Navbar />
             <main>
-                <SkillsSection />
+                <AboutSection />
             </main>
             <Footer />
         </div>
     );
 };
 
-export default Skills;
+export default About;
