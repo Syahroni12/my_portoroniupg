@@ -33,16 +33,13 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     category: "Database",
   },
+  //  ADONIS JS
   {
-    name: "MongoDB",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-    category: "Database",
+    name: "AdonisJS",
+    icon: "https://avatars.githubusercontent.com/u/41620859?s=200&v=4",
+    category: "Backend",
   },
-  {
-    name: "Redis",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
-    category: "Database",
-  },
+
   {
     name: "JavaScript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -58,11 +55,7 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     category: "Frontend",
   },
-  {
-    name: "Vue.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-    category: "Frontend",
-  },
+
   {
     name: "Docker",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
@@ -73,15 +66,12 @@ const skills = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     category: "DevOps",
   },
+
+  // BOOSTRAP
   {
-    name: "Linux",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-    category: "DevOps",
-  },
-  {
-    name: "AWS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
-    category: "DevOps",
+    name: "Bootstrap",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg",
+    category: "Frontend",
   },
 ];
 
@@ -131,9 +121,8 @@ export function SkillsSection() {
             >
               {/* Glow Effect */}
               <div
-                className={`absolute inset-0 rounded-xl transition-opacity duration-300 ${
-                  hoveredSkill === skill.name ? "opacity-100" : "opacity-0"
-                }`}
+                className={`absolute inset-0 rounded-xl transition-opacity duration-300 ${hoveredSkill === skill.name ? "opacity-100" : "opacity-0"
+                  }`}
                 style={{
                   background:
                     "radial-gradient(circle at center, hsl(var(--primary) / 0.15), transparent 70%)",
