@@ -13,6 +13,27 @@ interface Certificate {
 
 const certificates: Certificate[] = [
     {
+        title: "Program Magang Kominfo Jawa Timur",
+        organizer: "Dinas Komunikasi dan Informatika Provinsi Jawa Timur",
+        year: "2025",
+        skills: "IT, Information System, Professional Internship,typeScript,AdonisJS,PostgreSQL",
+        driveId: "1W9wfhSikSeeTmqh5w_ZUoOJ3wyV4126N",
+    },
+    {
+        title: "Magang Mandiri Seal",
+        organizer: "Sosial Economic Acceleration Lab (SEAL)",
+        year: "2025",
+        skills: "Adonis JS, PostgreSQL, TypeScript,RAG(Retrieval Augmented Generation),API Integration",
+        driveId: "1moSU8YX-75nlhbYjeIduYsnwQfppbzrm",
+    },
+    {
+        title: "Financial Literacy 101",
+        organizer: "Dicoding Indonesia",
+        year: "2025",
+        skills: "Financial Literacy, Digital Certification",
+        driveId: "1oOYwQ3e4-ngcF14FhjOesEfCBd_kbLc8",
+    },
+    {
         title: "IQACS untuk Greenhouse Kopi Nursery",
         organizer: "Program Merdeka Belajar Kampus Merdeka",
         year: "2024",
@@ -20,13 +41,29 @@ const certificates: Certificate[] = [
         driveId: "1-iWvRAQy-rX0SDVretBGAxX89GGmvDzz",
     },
     {
-        title: "Peserta MBKM JTI Innovation",
+        title: "Peserta MBKM JTI Innovation Batch 1",
+        organizer: "Merdeka Belajar Kampus Merdeka",
+        year: "2023 - 2024",
+        skills: "Full Stack Web Development",
+        driveId: "1eqjwDMwf6KUJQ_bgYjBVVFOFmXndP5kF",
+    }, {
+        title: "Peserta MBKM JTI Innovation Batch 2",
         organizer: "Merdeka Belajar Kampus Merdeka",
         year: "2024",
         skills: "Full Stack Web Development",
-        driveId: "PASTE_ID_HERE",
+        driveId: "1rf6OEwmg7oTgZMXgfo3FC1InxBGD8lmv",
     },
+
+    {
+        title: "SNAV & OAV Developer System",
+        organizer: "Politeknik Negeri Jember",
+        year: "2024",
+        skills: "Full Stack Development, laravel, Bootstrap, MySQL, PHP, Git",
+        driveId: "1SLmwjnoYIIAWWE3QVNSworcfpC8nUtkS",
+    },
+
 ];
+
 
 export function CertificateSection() {
     const [preview, setPreview] = useState<Certificate | null>(null);
