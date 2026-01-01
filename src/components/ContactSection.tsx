@@ -45,16 +45,41 @@ export function ContactSection() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      // INI BAGIAN PENTING: Menghubungi backend yang baru kamu buat
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    toast({
-      title: "Message sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
-    });
+      const data = await response.json();
 
-    setFormData({ name: "", email: "", message: "" });
-    setIsSubmitting(false);
+      if (response.ok) {
+        // Jika sukses terkirim
+        toast({
+          title: "Message sent!",
+          description: "Thank you for reaching out. I'll get back to you soon.",
+        });
+        // Kosongkan form lagi
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        // Jika backend menolak (misal error server)
+        throw new Error(data.error || "Failed to send message");
+      }
+    } catch (error) {
+      // Jika error koneksi atau lainnya
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive", // Pastikan ui toast kamu support variant ini
+      });
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
