@@ -5,54 +5,70 @@ import { Briefcase, Calendar } from "lucide-react";
 
 const experiences = [
   {
-    title: "Senior Backend Developer",
-    company: "Tech Innovators Inc.",
-    period: "2022 - Present",
+    title: "Backend Developer (Intern)",
+    company: "Social Economic Accelerator Lab (SEAL) – Diskominfo Jatim",
+    period: "Aug 2025 – Dec 2025",
     description:
-      "Leading backend architecture decisions, mentoring junior developers, and building scalable microservices handling millions of requests daily.",
+      "Berperan sebagai Backend Developer dalam pengembangan dan optimalisasi sistem backend aplikasi layanan publik MAJADIGI.",
     achievements: [
-      "Reduced API response time by 60%",
-      "Implemented CI/CD pipelines",
-      "Led team of 5 developers",
+      "Mengimplementasikan pgvector untuk embedding data",
+      "Mengintegrasikan LangFlow dan ChromaDB untuk pencarian berbasis vektor",
+      "Membangun sinkronisasi data real-time menggunakan event trigger",
+      "Mengoptimalkan logika API agar lebih efisien dan stabil",
+      "Meningkatkan visualisasi dan akurasi dashboard sistem",
     ],
   },
   {
-    title: "Fullstack Developer",
-    company: "Digital Solutions Co.",
-    period: "2020 - 2022",
+    title: "Full Stack Web Developer",
+    company: "MBKM – Intelligence Quality Air Control System (Kopi Nursery)",
+    period: "Aug 2024 – Dec 2024",
     description:
-      "Developed full-stack applications using Laravel and Vue.js, focusing on e-commerce platforms and inventory management systems.",
+      "Mengembangkan sistem monitoring dan kontrol suhu, kelembaban, serta klasifikasi penyakit daun kopi berbasis web dan IoT.",
     achievements: [
-      "Built 10+ production applications",
-      "Integrated payment gateways",
-      "Optimized database queries",
+      "Membangun REST API Laravel untuk deteksi penyakit daun kopi",
+      "Mengembangkan model AI untuk klasifikasi penyakit tanaman",
+      "Mengintegrasikan ESP32 untuk pengambilan data suhu, kelembaban, dan pH tanah",
+      "Membangun fitur deteksi penyakit beserta tampilan antarmuka",
     ],
   },
   {
-    title: "Backend Developer",
-    company: "StartUp Ventures",
-    period: "2019 - 2020",
+    title: "Full Stack Web Developer (Intern)",
+    company: "Teaching Factory JTI Innovation – Politeknik Negeri Jember",
+    period: "Sep 2023 – Jun 2024",
     description:
-      "Designed and implemented RESTful APIs, database schemas, and authentication systems for early-stage startups.",
+      "Mengembangkan berbagai sistem informasi kampus dan aplikasi berbasis web untuk kebutuhan akademik dan operasional.",
     achievements: [
-      "Developed authentication system",
-      "Created API documentation",
-      "Managed cloud infrastructure",
+      "Membangun sistem SI MBKM dan fitur data master matkul",
+      "Mengembangkan sistem keuangan dan manajemen kantin (Di Kantin POLIJE)",
+      "Membangun sistem ujian dan ranking mahasiswa (CERDAS CERMAT OAV)",
+      "Membuat fitur input dan ekstraksi data mahasiswa baru ke format JSON",
     ],
   },
   {
-    title: "Junior Developer",
-    company: "Web Agency Pro",
-    period: "2018 - 2019",
+    title: "Backend Web Developer",
+    company: "PT Sage Maslahat Indonesia",
+    period: "Mar 2024 – Jun 2024",
     description:
-      "Started my career building websites and learning backend development fundamentals while working on client projects.",
+      "Berfokus pada pengembangan backend web profile perusahaan.",
     achievements: [
-      "Delivered 20+ client projects",
-      "Learned agile methodology",
-      "Built first Laravel application",
+      "Mengatur manajemen dan autentikasi profile pengguna",
+      "Membangun sistem pengelolaan dan penampilan gambar landing page",
+    ],
+  },
+  {
+    title: "Web Developer & Software Testing (Intern)",
+    company: "CV Soluta Makarya Sehati",
+    period: "Jan 2021 – Apr 2021",
+    description:
+      "Terlibat dalam pengembangan web dan pengujian aplikasi pada sistem berbasis CodeIgniter.",
+    achievements: [
+      "Mengembangkan fitur CRUD data pelanggan menggunakan CodeIgniter",
+      "Melakukan pengujian fungsional secara manual",
+      "Mendokumentasikan hasil testing dan melaporkan bug ke tim developer",
     ],
   },
 ];
+
 
 export function ExperienceSection() {
   const ref = useRef(null);
@@ -88,25 +104,22 @@ export function ExperienceSection() {
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className={`relative flex flex-col md:flex-row gap-8 mb-12 ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-              }`}
+              className={`relative flex flex-col md:flex-row gap-8 mb-12 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                }`}
             >
               {/* Timeline Dot */}
               <div className="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full border-4 border-background gradient-bg z-10" />
 
               {/* Content Card */}
               <div
-                className={`flex-1 ml-8 md:ml-0 ${
-                  index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
-                }`}
+                className={`flex-1 ml-8 md:ml-0 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"
+                  }`}
               >
                 <div className="glass-card p-6 hover:glow-sm transition-all duration-300">
                   {/* Period Badge */}
                   <div
-                    className={`flex items-center gap-2 mb-3 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}
+                    className={`flex items-center gap-2 mb-3 ${index % 2 === 0 ? "md:justify-end" : ""
+                      }`}
                   >
                     <Calendar className="w-4 h-4 text-primary" />
                     <span className="text-sm text-primary font-medium">
@@ -119,9 +132,8 @@ export function ExperienceSection() {
                     {exp.title}
                   </h3>
                   <div
-                    className={`flex items-center gap-2 mb-4 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}
+                    className={`flex items-center gap-2 mb-4 ${index % 2 === 0 ? "md:justify-end" : ""
+                      }`}
                   >
                     <Briefcase className="w-4 h-4 text-muted-foreground" />
                     <span className="text-muted-foreground">{exp.company}</span>
@@ -129,18 +141,16 @@ export function ExperienceSection() {
 
                   {/* Description */}
                   <p
-                    className={`text-muted-foreground text-sm mb-4 ${
-                      index % 2 === 0 ? "md:text-right" : ""
-                    }`}
+                    className={`text-muted-foreground text-sm mb-4 ${index % 2 === 0 ? "md:text-right" : ""
+                      }`}
                   >
                     {exp.description}
                   </p>
 
                   {/* Achievements */}
                   <div
-                    className={`flex flex-wrap gap-2 ${
-                      index % 2 === 0 ? "md:justify-end" : ""
-                    }`}
+                    className={`flex flex-wrap gap-2 ${index % 2 === 0 ? "md:justify-end" : ""
+                      }`}
                   >
                     {exp.achievements.map((achievement) => (
                       <span
