@@ -5,46 +5,81 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "E-Commerce API Platform",
+    title: "GMF Tools",
     description:
-      "A scalable RESTful API powering multiple e-commerce applications with advanced inventory management and payment processing.",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-    tech: ["Laravel", "MySQL", "Redis", "Docker"],
+      "Developed a web-based inventory management system with features for adding items, viewing item data, and exporting item reports equipped with QR Codes.",
+    image: "/project/projek1.png",
+    tech: ["Laravel", "MySQL", "JavaScript", "QR Code"],
+    role: "Full Stack Web Developer",
     demo: "#",
+    github: "https://github.com/ahmadhipnie/laravel_gmf.git",
+  },
+  {
+    title: "MAJADIGI Public Service Application",
+    description:
+      "Provided backend support and maintenance for the MAJADIGI public service application, focusing on system stability, API optimization, and data processing improvements.",
+    image: "/project/majadigi.png",
+    tech: [
+      "Laravel",
+      "PostgreSQL",
+      "pgvector",
+      "ChromaDB",
+      "LangFlow",
+    ],
+    role: "Backend Developer (Support & Maintenance)",
+    demo: "https://majadigi.jatimprov.go.id/",
     github: "#",
   },
   {
-    title: "Real-Time Chat System",
+    title: "MBKM – Intelligence Quality Air Control System (Coffee Nursery)",
     description:
-      "WebSocket-based chat application supporting thousands of concurrent users with message persistence and media sharing.",
-    image:
-      "https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=600&h=400&fit=crop",
-    tech: ["Node.js", "Socket.io", "MongoDB", "React"],
+      "An IoT and AI-based system designed to monitor and control temperature and humidity in a coffee nursery, as well as classify coffee leaf diseases.",
+    image: "/project/projek2.png",
+    tech: [
+      "Laravel",
+      "Python",
+      "ESP32",
+      "Machine Learning",
+      "IoT",
+      "MySQL",
+    ],
+    role: "Full Stack Web Developer & AI Engineer",
     demo: "#",
+    github: "https://github.com/Syahroni12/kopinurseryweb.git",
+  },
+  {
+    title: "New Student Re-Registration System",
+    description:
+      "Developed a web application for managing new student registration schedules and exporting student data into JSON format.",
+    image: "/project/projek3.png",
+    tech: ["Laravel", "MySQL", "JavaScript"],
+    role: "Full Stack Web Developer",
+    demo: "https://daftarulang.polije.ac.id/",
     github: "#",
   },
   {
-    title: "Cloud Infrastructure Manager",
+    title: "Margo Utomo Hotel Booking System",
     description:
-      "DevOps dashboard for managing cloud resources, automated deployments, and monitoring across multiple providers.",
-    image:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop",
-    tech: ["Python", "AWS", "Terraform", "Vue.js"],
-    demo: "#",
-    github: "#",
+      "Built backend services for a hotel reservation system, including room management, booking data, payment processing, facility data, gallery management, and checkout time handling.",
+    image: "/project/proyek4.png",
+    tech: ["Laravel", "MySQL", "REST API"],
+    role: "Backend Developer",
+    demo: "http://www.margoutomoresorts.com/",
+    github: "https://github.com/Syahroni12/margo-utomo-daisyUI.git",
   },
   {
-    title: "Analytics Dashboard",
+    title: "Kamp Sewa – Rental Management System",
     description:
-      "Business intelligence platform with real-time data visualization, custom reports, and predictive analytics features.",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-    tech: ["TypeScript", "PostgreSQL", "GraphQL", "D3.js"],
-    demo: "#",
+      "Developed a rental management system with reporting features, report data management, and financial charts for income, expenses, and profit visualization.",
+    image: "/project/proyek5.png",
+    tech: ["Laravel", "Chart.js", "MySQL", "JavaScript"],
+    role: "Full Stack Web Developer",
+    demo: "",
     github: "#",
   },
+
 ];
+
 
 export function ProjectsSection() {
   const ref = useRef(null);
