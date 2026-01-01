@@ -75,7 +75,7 @@ const projects = [
     tech: ["Laravel", "Chart.js", "MySQL", "JavaScript"],
     role: "Full Stack Web Developer",
     demo: "",
-    github: "#",
+    github: "https://github.com/bintangandk/kampsewa-2.0.git",
   },
 
 ];
